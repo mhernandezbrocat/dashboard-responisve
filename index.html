@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Admin Dashboard</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/e220a7b493.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="logo-apple"></ion-icon></span>
+              <span class="title">Brand Name</span>
+            </a>
+          </li>
+          <li>
+            <a href="#main">
+              <span class="icon"
+                ><ion-icon name="home-outline"></ion-icon
+              ></span>
+              <span class="title">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#main">
+              <span class="icon"
+                ><ion-icon name="people-outline"></ion-icon
+              ></span>
+              <span class="title">Customers</span>
+            </a>
+          </li>
+          <li>
+            <a href="#main">
+              <span class="icon"
+                ><ion-icon name="chatbubble-outline"></ion-icon
+              ></span>
+              <span class="title">Message</span>
+            </a>
+          </li>
+          <li>
+            <a href="#main">
+              <span class="icon"
+                ><ion-icon name="help-outline"></ion-icon
+              ></span>
+              <span class="title">Help</span>
+            </a>
+          </li>
+          <li>
+            <a href="main#">
+              <span class="icon"
+                ><ion-icon name="settings-outline"></ion-icon
+              ></span>
+              <span class="title">Setting</span>
+            </a>
+          </li>
+          <li>
+            <a href="#main">
+              <span class="icon"
+                ><ion-icon name="lock-closed-outline"></ion-icon
+              ></span>
+              <span class="title">Password</span>
+            </a>
+          </li>
+          <li>
+            <a href="#main">
+              <span class="icon"
+                ><ion-icon name="log-out-outline"></ion-icon
+              ></span>
+              <span class="title">Sign Out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- main -->
+      <div  id="main" class="main">
+        <div class="topbar">
+          <div class="toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+          <!-- search -->
+          <div class="search">
+            <label>
+              <input type="text" placeholder="Search...">
+              <ion-icon name="search-outline"></ion-icon>
+            </label>
+          </div>
+          <!-- user -->
+          <div class="user">
+            <img src="images/user.jpg"></img>
+          </div>
+        </div>
+
+        <!-- cards -->
+        <div class="cardBox">
+          <div class="card">
+            <div>
+              <div class="numbers">1,504</div>
+              <div class="cardName">Daily Views</div>
+            </div>
+            <div class="iconBox">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">80</div>
+              <div class="cardName">Sales</div>
+            </div>
+            <div class="iconBox">
+              <ion-icon name="cart-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">284</div>
+              <div class="cardName">Comments</div>
+            </div>
+            <div class="iconBox">
+              <ion-icon name="chatbubbles-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">$7,842</div>
+              <div class="cardName">Earning</div>
+            </div>
+            <div class="iconBox">
+              <ion-icon name="cash-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <!-- data list -->
+        <div class="details">
+          <div class="recentOrders">
+            <div class="cardHeader">
+              <h2>Recent Orders</h2>
+              <a href="#" class="btn">View All</a>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Price</td>
+                  <td>Payment</td>
+                  <td>Status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Star Refrigerator</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Window Cooler</td>
+                  <td>$1100</td>
+                  <td>Due</td>
+                  <td><span class="status progress">In Progress</span></td>
+                </tr>
+                <tr>
+                  <td>Speakers</td>
+                  <td>$620</td>
+                  <td>Paid</td>
+                  <td><span class="status return">Return</span></td>
+                </tr>
+                <tr>
+                  <td>HP Laptop</td>
+                  <td>$1400</td>
+                  <td>Due</td>
+                  <td><span class="status progress">In Progress</span></td>
+                </tr>
+                <tr>
+                  <td>Apple Watch</td>
+                  <td>$670</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Wall Fan</td>
+                  <td>$159</td>
+                  <td>Paid</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Adidad Shoes</td>
+                  <td>$98</td>
+                  <td>Paid</td>
+                  <td><span class="status return">Return</span></td>
+                </tr>
+                <tr>
+                  <td>Denim Shirts</td>
+                  <td>$105</td>
+                  <td>Due</td>
+                  <td><span class="status progress">In Progress</span></td>
+                </tr>
+                <tr>
+                  <td>Casual Shoes</td>
+                  <td>$236</td>
+                  <td>Paid</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Macbook Pro</td>
+                  <td>$2400</td>
+                  <td>Paid</td>
+                  <td><span class="status progress">In Progress</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- new Customers -->
+          <div class="recentCustomers">
+            <div class="cardHeader">
+              <h2>Recent Customers</h2>
+            </div>
+            <table>
+              <tbody>              
+                <tr>
+                  <td><div class="imgBox"><img src="images/img1.jpg" alt=""></div></td>
+                  <td><h4>David<br><span>Italy</span></h4></td>
+                </tr>
+              <tr>
+                <td><div class="imgBox"><img src="images/img2.jpg" alt="">
+                </div></td>
+                <td><h4>Muhammad<br><span>India</span></h4></td>
+              </tr>
+              <tr>
+                <td><div class="imgBox"><img src="images/img3.jpg" alt="">
+                </div></td>
+                <td><h4>Amelia<br><span>France</span></h4></td>
+              </tr>
+              <tr>
+                <td><div class="imgBox"><img src="images/img4.jpg" alt="">
+                </div></td>
+                <td><h4>Olivia<br><span>USA</span></h4></td>
+              </tr>
+              <tr>
+                <td><div class="imgBox"><img src="images/img5.jpg" alt="">
+                </div></td>
+                <td><h4>David<br><span>Italy</span></h4></td>
+              </tr>
+              <tr>
+                <td><div class="imgBox"><img src="images/img6.jpg" alt="">
+                </div></td>
+                <td><h4>Amit<br><span>Japan</span></h4></td>
+              </tr>
+              <tr>
+                <td><div class="imgBox"><img src="images/img7.jpg" alt="">
+                </div></td>
+                <td><h4>Ashraf<br><span>India</span></h4></td>
+              </tr>
+            </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="" type="text/javascript"></script>
+    <script type="text/javascript">
+      // hover list
+      let list = document.querySelectorAll('.navigation ul li');
+
+      function activeLink() {
+        list.forEach((item) => 
+        item.classList.remove('hovered'))
+        this.classList.add('hovered')
+      };
+
+      list.forEach((item) => {
+        item.addEventListener("mouseover", activeLink);
+      });
+
+      // menu toggle
+      let toggle = document.querySelector('.toggle')
+      let navigation = document.querySelector('.navigation')
+      let main = document.querySelector('.main')
+
+      toggle.onclick = function() {
+        navigation.classList.toggle('active')
+        main.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>
